@@ -101,7 +101,7 @@ class Enemy extends FlxSprite
 	
 	override public function draw():Void 
 	{
-		if ((velocity.x != 0 || velocity.y != 0) && touching != FlxObject.NONE)
+		if ((velocity.x != 0 || velocity.y != 0) && touching == FlxObject.NONE)
 		{
 			
 			if (Math.abs(velocity.x) > Math.abs(velocity.y))
